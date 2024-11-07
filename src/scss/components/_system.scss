@@ -1,0 +1,86 @@
+.system {
+  padding: 6rem 0;
+  padding-top: 0;
+  margin-bottom: 6rem;
+
+  @include small-tablet {
+    padding-bottom: 3rem;
+    margin-bottom: 3.2rem;
+  }
+
+  &__title {
+    margin-bottom: 2.4rem;
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.4rem;
+    flex-wrap: wrap;
+
+    @include small-tablet {
+      align-items: stretch;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+
+    @include small-tablet {
+      min-width: 40%;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.8rem;
+      order: 5;
+
+      &:nth-child(1) {
+        order: 0;
+      }
+
+      &:nth-child(2) {
+        order: 1;
+      }
+
+      &:nth-child(3) {
+        order: 3;
+      }
+
+      &:nth-child(4) {
+        order: 2;
+      }
+
+      &:nth-child(5) {
+        order: 4;
+      }
+
+      &:nth-child(6) {
+        order: 5;
+      }
+    }
+
+
+  }
+
+  &__icon {
+    height: 2rem;
+    width: auto;
+
+    img {
+      display: block;
+      height: 100%;
+      width: auto;
+      object-fit: contain;
+    }
+  }
+
+  &__name {
+    max-width: 16rem;
+
+    @include small-tablet {
+      max-width: 100%;
+    }
+  }
+}

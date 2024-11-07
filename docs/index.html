@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#111111" />
+  <title>ПрограмМ Лайн</title>
+  <link
+    rel="preload"
+    href="fonts/Geologica-Regular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/Geologica-Light.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/Geometria-Medium.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/Inter-Regular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/Montserrat-Regular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link rel="stylesheet" href="css/vendor.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script defer src="swiped-events.min.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+
+
+  <body class="page__body">
+    <div class="site-container">
+      <div class="site-container__line"></div>
+      <div class="site-container__line"></div>
+      <div class="site-container__line"></div>
+      <div class="site-container__line"></div>
+      <div class="site-container__line"></div>
+      <header class="header">
+  <div class="container">
+    <div class="header__container">
+      <a href="./" class="header__logo logo"> ПрограмМ Лайн </a>
+
+      <nav class="nav header__nav">
+        <ul class="list-reset nav__list">
+          <li class="nav__item">
+            <a href="#prob" class="nav__link">Боли клиента</a>
+          </li>
+          <li class="nav__item">
+            <a href="#why" class="nav__link">Почему мы</a>
+          </li>
+          <li class="nav__item">
+            <a href="#sol" class="nav__link">Решение</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__col">
+        <div>
+          <a href="mailto:support@program-line.ru" class="header__link"
+            >support@program-line.ru</a
+          >
+        </div>
+        <div>
+          <a href="tel:+79636416422" class="header__link">+7 (963) 641-64-22</a>
+        </div>
+      </div>
+
+      <a href="#" class="header__btn btn btn-reset modal-btn">Получить аудит</a>
+      <div class="header__mob">
+        <div class="header__icons">
+          <a href="tel:+79636416422" class="header__ic">
+            <img src="./img/call-icon.svg" alt="" />
+          </a>
+          <a href="mailto:support@program-line.ru" class="header__ic"
+            ><img src="./img/mail-icon.svg" alt=""
+          /></a>
+        </div>
+        <div class="header__burger">
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu">
+  <div class="menu__body">
+    <nav class="nav menu__nav">
+      <ul class="list-reset nav__list">
+        <li class="nav__item">
+          <a href="#prob" class="nav__link">Боли клиента</a>
+        </li>
+        <li class="nav__item">
+          <a href="#why" class="nav__link">Почему мы</a>
+        </li>
+        <li class="nav__item">
+          <a href="#sol" class="nav__link">Решение</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="menu__col">
+      <div>
+        <a href="mailto:support@program-line.ru" class="header__link"
+          >support@program-line.ru</a
+        >
+      </div>
+      <div>
+        <a href="tel:+79636416422" class="header__link">+7 (963) 641-64-22</a>
+      </div>
+    </div>
+
+    <a href="#" class="menu__btn btn btn-reset modal-btn">Получить аудит</a>
+  </div>
+</div>
+
+</header>
+
+      <main class="main">
+        <section class="hero">
+  <div class="container hero__container">
+    <div class="hero__row">
+      <div class="hero__content">
+        <h1 class="hero__title">Автоматизация бюджетирования и казначейства</h1>
+        <p class="hero__desc desc">
+          Гарантия результата от экспертов с 20-летним опытом внедрения 1С
+        </p>
+      </div>
+
+      <form action="#" class="hero__form form">
+        <div class="form__capture">Ответим на все интересующие вопросы</div>
+        <label class="form__label">
+          <input
+            type="tel"
+            class="form__input input-tel"
+            placeholder="Телефон"
+          />
+        </label>
+        <button class="form__btn btn btn-reset">
+          Бесплатный экспресс-аудит
+        </button>
+      </form>
+    </div>
+
+    <div class="hero__items">
+      <div class="hero__item">
+        <p class="desc">+20% к прибыли компании*</p>
+      </div>
+      <div class="hero__item">
+        <p class="desc">Ускорение получения финансовой отчетности</p>
+      </div>
+      <div class="hero__item">
+        <p class="desc">Поставленный управленческий учет</p>
+      </div>
+    </div>
+    <a href="#" class="hero__btn btn btn-reset modal-btn"
+      >Бесплатный экспресс-аудит</a
+    >
+    <div class="hero__warn">
+      *Согласно данным, предоставленным компаниями-клиентами ООО “Программ Лайн”
+      после внедрения решений по автоматизации бюджетирования и казначейства
+    </div>
+  </div>
+</section>
+ <section class="sign" id="prob">
+  <div class="container">
+    <div class="sign__header">
+      <h2 class="title2 sign__title">
+        Топ сигналов,<br />говорящих &quot;ПОРА!&quot;
+      </h2>
+      <p class="subtitle sign__subtitle">Автоматизация<br />бюджетирования</p>
+    </div>
+
+    <div class="sign__container">
+      <div class="sign__col">
+        <div class="sign__tt">Проблема</div>
+
+        <ul class="list-reset sign__list">
+          <li class="sign__item desc">
+            <span>(01)</span>
+            Частые кассовые разрывы
+          </li>
+          <li class="sign__item desc">
+            <span>(02)</span>
+            Не достижение финансовых целей
+          </li>
+          <li class="sign__item desc">
+            <span>(03)</span>
+            Не достижение финансовых целей
+          </li>
+          <li class="sign__item desc">
+            <span>(04)</span>
+            Не знаете, как повысить эффективность использования ресурсов
+          </li>
+          <li class="sign__item desc">
+            <span>(05)</span>
+            Нет понимания, выгодно ли предоставление рассрочки покупателям и
+            поставщикам
+          </li>
+          <li class="sign__item desc">
+            <span>(06)</span>
+            Нет понимания реального финансового положения компании, слабый
+            контроль над расходами
+          </li>
+          <li class="sign__item desc">
+            <span>(07)</span>
+            Сложно конвертировать цифры в информацию для принятия управленческих
+            решений
+          </li>
+          <li class="sign__item desc">
+            <span>(08)</span>
+            Трудности с формированием отчетности, контроль бюджетов слишком
+            сложен и занимает много времени
+          </li>
+        </ul>
+      </div>
+      <div class="sign__col">
+        <div class="sign__tt">ПРИЧИНА</div>
+
+        <ul class="list-reset sign__list">
+          <li class="sign__item desc">
+            <span>(01)</span>
+            Нет финансового планирования, прогнозирования рисков
+          </li>
+          <li class="sign__item desc">
+            <span>(02)</span>
+            Есть ошибки в финансовом планировании, не учитываются изменения на
+            рынке
+          </li>
+          <li class="sign__item desc">
+            <span>(03)</span>
+            Не отслеживаются факторы, влияющие на размер прибыли
+          </li>
+          <li class="sign__item desc">
+            <span>(04)</span>
+            Не просчитывается отдача от заемных средств, реинвестирования
+            прибыли и т.д.
+          </li>
+          <li class="sign__item desc">
+            <span>(05)</span>
+            Не оценивается эффективность использования дебиторской и
+            кредиторской задолженности
+          </li>
+          <li class="sign__item desc">
+            <span>(06)</span>
+            Нет контроля над движением денежных средств, на проводится анализ
+            финансовой устойчивости
+          </li>
+          <li class="sign__item desc">
+            <span>(07)</span>
+            Нет автоматизированной системы перевода данных в наглядный и
+            понятный управленцу вид
+          </li>
+          <li class="sign__item desc">
+            <span>(08)</span>
+            Ручной сбор фактических данных, несколько подразделений или юр лиц.
+            Бюджетирование ведется вручную / в Excel
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="auto">
+  <div class="container">
+    <div class="auto__container">
+      <div class="auto__content">
+        <h2 class="title2 auto__title">
+          Автоматизируйте казначейство и бюджетирование
+        </h2>
+        <div class="auto__text">
+          <p class="desc auto__subtitle">
+            Это не только решит указанные проблемы. Вы получите главное - базу
+            для управленческого учета и систему эффективного распределения
+            ресурсов компании.
+          </p>
+
+          <p class="desc auto__desc">
+            Автоматизация бюджетирования и казначейства – это новый уровень
+            управления бизнесом. Он включает в себя систему инструментов
+            финансового контроля, аналитики и отчетности.
+          </p>
+          <p class="desc auto__desc">
+            Правильно используя их, вы сможете максимально эффективно решать
+            свои задачи – на какой бы позиции в компании вы не находились.
+          </p>
+        </div>
+      </div>
+
+      <div class="auto__img">
+        <img src="./img/auto.webp" alt="" />
+      </div>
+    </div>
+
+    <div class="auto__items">
+      <div class="auto__item auto-item">
+        <p class="auto-item__title">УПРАВЛЯЙТЕ</p>
+      </div>
+      <div class="auto__item auto-item">
+        <div class="auto-item__icon">
+          <img src="./img/icons/waste.svg" alt="" />
+        </div>
+        <p class="desc auto-item__desc">Без лишних расходов</p>
+      </div>
+      <div class="auto__item auto-item">
+        <div class="auto-item__icon">
+          <img src="./img/icons/port.svg" alt="" />
+        </div>
+        <p class="desc auto-item__desc">Без проблем с отчетностью</p>
+      </div>
+      <div class="auto__item auto-item">
+        <div class="auto-item__icon">
+          <img src="./img/icons/prot.svg" alt="" />
+        </div>
+        <p class="desc auto-item__desc">
+          Без рисков финансового «проседания» бизнеса
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+ <section class="mean" id="why">
+  <div class="container mean__container">
+    <div class="mean__header">
+      <h2 class="title2 mean__title">Что это означает для вас?</h2>
+      <p class="subtitle mean__subtitle">
+        Автоматизация
+        <br />бюджетирования
+      </p>
+    </div>
+    <div class="mean__slider swiper">
+      <div class="mean-prev mean__control mean__control--prev">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16 20L9 12L16 4"
+            stroke="#404040"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+      <div class="mean-next mean__control mean__control--next">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8 4L15 12L8 20"
+            stroke="#404040"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <article class="mean__slide mean__slide">
+            <div class="mean__content">
+              <h3 class="title3 mean-slide__title">
+                Для собственника и руководителя
+              </h3>
+              <ul class="desc mean-slide__list">
+                <li>
+                  Фундамент для принятия взвешенных управленческих решений
+                </li>
+                <li>
+                  Раннее предупреждение угроз и рисков финансовой стабильности
+                  компании
+                </li>
+                <li>
+                  Понимание эффективности работы компании и ее подразделений или
+                  филиалов
+                </li>
+                <li>
+                  Объективная и оперативная информация о бизнес-результатах
+                </li>
+                <li>
+                  Ключевые показатели эффективности, управленческая отчетность
+                  онлайн
+                </li>
+              </ul>
+            </div>
+            <div class="mean-slide__img">
+              <img src="./img/mean/01.webp" alt="" />
+            </div>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="mean__slide mean__slide">
+            <div class="mean__content">
+              <h3 class="title3 mean-slide__title">
+                Для финансового директора/главного бухгалтера
+              </h3>
+              <ul class="desc mean-slide__list">
+                <li>
+                  Удобное управление финансами, просчет ликвидности,
+                  планирование движения денежных средств
+                </li>
+                <li>
+                  Возможность формировать БДР, БДДС, ББЛ и т.д. из операционных
+                  бюджетов
+                </li>
+                <li>Финансовое планирование по множеству сценариев</li>
+                <li>«План-план», «план-факт» анализ, расчет отклонений</li>
+                <li>
+                  Моделирование прибыли, оптимизация расходов, отдача от
+                  инвестиций
+                </li>
+              </ul>
+            </div>
+            <div class="mean-slide__img">
+              <img src="./img/mean/02.webp" alt="" />
+            </div>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="mean__slide mean__slide">
+            <div class="mean__content">
+              <h3 class="title3 mean-slide__title">Для IT-директора</h3>
+              <ul class="desc mean-slide__list">
+                <li>
+                  Проверенное решение от 1С с простым внедрением и
+                  администрированием
+                </li>
+                <li>Легкое масштабирование</li>
+                <li>Гибкая настройка для всех категорий пользователей</li>
+                <li>
+                  Отлаженный обмен данными и документами с 1С и контролирующими
+                  органами
+                </li>
+              </ul>
+            </div>
+            <div class="mean-slide__img">
+              <img src="./img/mean/03.webp" alt="" />
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="banner">
+  <div class="container">
+    <div class="banner__container">
+      <div class="banner__content">
+        <h2 class="title3 title3--white banner__title">
+          Бесплатный экспресс-аудит финансовой системы вашего бизнеса
+        </h2>
+        <p class="desc banner__desc desc--white">
+          Узнайте, какие задачи в вашей компании решит автоматизация
+          бюджетирования
+        </p>
+        <ul class="list-reset check-list banner__list desc desc--white">
+          <li>Ответим на вопросы</li>
+          <li>Разберем текущую ситуацию</li>
+          <li>Предложим варианты решений</li>
+        </ul>
+        <a href="#" class="btn btn-reset btn--wh banner__btn modal-btn"
+          >Оставить заявку</a
+        >
+      </div>
+
+      <div class="banner__img">
+        <img src="./img/banner/01.svg" alt="" />
+      </div>
+    </div>
+  </div>
+</section>
+ <section class="success">
+  <div class="container">
+    <h2 class="title2 success__title">
+      Для успешной автоматизации бюджетирования исполнитель должен быть не
+      только программистом, но и экспертом-методологом.
+    </h2>
+
+    <div class="success__pos">
+      <div class="success__capture title3">такой специалист может:</div>
+
+      <div class="success__container">
+        <div class="success__left">
+          <div class="success__items">
+            <div class="success__item s-item">
+              <div class="s-item__icon">
+                <img src="./img/success/01.svg" alt="" />
+              </div>
+              <p class="s-item__desc desc">Определить модель бюджетов</p>
+            </div>
+            <div class="success__item s-item">
+              <div class="s-item__icon">
+                <img src="./img/success/02.svg" alt="" />
+              </div>
+              <p class="s-item__desc desc">Организовать контрольную функцию</p>
+            </div>
+
+            <div class="success__item s-item">
+              <div class="s-item__icon">
+                <img src="./img/success/03.svg" alt="" />
+              </div>
+              <p class="s-item__desc desc">Подобрать нужную систему</p>
+            </div>
+            <div class="success__item s-item">
+              <div class="s-item__icon">
+                <img src="./img/success/04.svg" alt="" />
+              </div>
+              <p class="s-item__desc desc">
+                Разработать правильную архитектуру для работы
+              </p>
+            </div>
+            <div class="success__item s-item">
+              <div class="s-item__icon">
+                <img src="./img/success/05.svg" alt="" />
+              </div>
+              <p class="s-item__desc desc">Научить работе в системе</p>
+            </div>
+            <div class="success__item s-item">
+              <div class="s-item__icon">
+                <img src="./img/success/06.svg" alt="" />
+              </div>
+              <p class="s-item__desc desc">
+                Ответить на любой вопрос, чтобы вы получили реальные результаты
+              </p>
+            </div>
+          </div>
+          <div class="success__img success__img--mob">
+            <img src="./img/success/cover.webp" alt="" />
+          </div>
+          <p class="desc success__under">
+            У каждой компании свои требования. Сложная система грозит
+            недовольством сотрудников и снижением эффективности. Важно найти
+            баланс между запросами руководства и ресурсами компании, а также
+            оценить готовность бизнеса к автоматизации.
+          </p>
+        </div>
+        <div class="success__img">
+          <img src="./img/success/cover.webp" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="banner banner--disc">
+  <div class="container">
+    <div class="banner__container">
+      <div class="banner__content">
+        <h2 class="title3 title3--white banner__title">
+          Давайте обсудим ваши пожелания И результат от внедрения прямо сейчас!
+        </h2>
+        <p class="desc banner__desc desc--white">
+          Экспресс-аудит даст вам ответы на важные вопросы. Это бесплатно и ни к
+          чему не обязывает.
+        </p>
+        <a href="#" class="btn btn-reset btn--wh banner__btn modal-btn"
+          >Оставить заявку</a
+        >
+      </div>
+
+      <div class="banner__img">
+        <img src="./img/banner/02.svg" alt="" />
+      </div>
+    </div>
+  </div>
+</section>
+ <section class="work" id="sol">
+  <div class="container">
+    <h3 class="work__capture capture">
+      Автоматизация бюджетирования и казначейства – не самая простая работа
+    </h3>
+
+    <div class="work__header">
+      <h2 class="title2 work__title">И мы делаем ее хорошо</h2>
+
+      <p class="work__subtitle subtitle">беремся за самые сложные задачи</p>
+    </div>
+
+    <div class="work__container">
+      <div class="work__left">
+        <div class="work__content">
+          <p class="desc work__desc">
+            Наше уникальное преимущество – глубокая экспертиза в области
+            автоматизации финансов. Наш ведущий эксперт обладает опытом
+            руководства направлением разработки «Казначейство. Бюджетирование.
+            Аналитика» ERP в фирме «1С». Мы знаем методологию и функционал
+            решения изнутри. Это позволит провести внедрение в сжатые сроки и
+            дать вам мощный инструмент решения задач.
+          </p>
+          <ul class="list-reset work__list desc">
+            <li><span>20+ лет</span> опыта 1С автоматизации</li>
+            <li>Высшее техническое и финансовое образование</li>
+            <li>
+              Успешно реализованные
+              <span>проекты на крупнейших предприятиях РФ</span>
+            </li>
+            <li>
+              <span>Высокая культура проектирования</span> и написания
+              программного кода по стандартам 1С
+            </li>
+            <li>
+              Использование <span>современных средств</span> CI/CD (GIT, GitLab,
+              EDT, Vanessa)
+            </li>
+          </ul>
+          <div class="work__img work__img--mob">
+            <img src="./img/work/01.webp" alt="" />
+          </div>
+          <div class="work__bottom">
+            <div class="capture work__tt">Работаем по методологии Agile:</div>
+            <p class="desc">
+              На начальном этапе прорабатывается общая концепция и архитектура
+              проекта; далее задачи проекта делятся на небольшие управляемые
+              части (1-4 недели); каждая итерация завершается значимым
+              результатом – готовым к использованию продуктом.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="work__img">
+        <img src="./img/work/01.webp" alt="" />
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="system">
+  <div class="container">
+    <h2 class="title3 system__title">Автоматизируем на базе</h2>
+    <div class="system__items">
+      <div class="system__item">
+        <div class="system__icon">
+          <img src="./img/work/1c.svg" alt="" />
+        </div>
+        <p class="desc system__name">Комплексная<br />автоматизация</p>
+      </div>
+      <div class="system__item">
+        <div class="system__icon">
+          <img src="./img/work/1c.svg" alt="" />
+        </div>
+        <p class="desc system__name">УХ</p>
+      </div>
+      <div class="system__item">
+        <div class="system__icon">
+          <img src="./img/work/1c.svg" alt="" />
+        </div>
+        <p class="desc system__name">ERP</p>
+      </div>
+      <div class="system__item">
+        <div class="system__icon">
+          <img src="./img/work/1c.svg" alt="" />
+        </div>
+        <p class="desc system__name">БИТ Финанс</p>
+      </div>
+      <div class="system__item">
+        <div class="system__icon">
+          <img src="./img/work/1c.svg" alt="" />
+        </div>
+        <p class="desc system__name">Собственные модули и решения</p>
+      </div>
+    </div>
+  </div>
+</section>
+ <section class="banner banner--know">
+  <div class="container">
+    <div class="banner__container">
+      <div class="banner__content">
+        <h2 class="title3 title3--white banner__title">
+          Узнайте, какое решение подойдет для вашей компании
+        </h2>
+        <p class="desc banner__desc desc--white">
+          Мы проведем бесплатный экспресс-аудит и поможем с выбором.
+        </p>
+        <a href="#" class="btn btn-reset btn--wh banner__btn modal-btn"
+          >Узнать</a
+        >
+      </div>
+
+      <div class="banner__img">
+        <img src="./img/banner/03.svg" alt="" />
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="top">
+  <div class="container">
+    <h2 class="title2 top__title">
+      <span>ТОП-4</span> гарантированных эффекта от автоматизации бюджетирования
+    </h2>
+
+    <div class="top__items">
+      <div class="top__item">
+        <span>(01)</span>
+
+        <p class="desc top__desc">
+          Регулярное достижение финансовых целей и предупреждение рисков
+        </p>
+      </div>
+      <div class="top__item">
+        <span>(02)</span>
+
+        <p class="desc top__desc">
+          Сокращение до 20% расходов компании за счет оптимизации бюджетов
+        </p>
+      </div>
+      <div class="top__item">
+        <span>(03)</span>
+
+        <p class="desc top__desc">
+          Легкое и удобное управление финансами, контроль ликвидности и расходов
+        </p>
+      </div>
+      <div class="top__item">
+        <span>(04)</span>
+
+        <p class="desc top__desc">
+          Бюджетные модели, доказавшие свою эффективность
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+ <section class="banner banner--take">
+  <div class="container">
+    <div class="banner__container">
+      <div class="banner__content">
+        <h2 class="title3 title3--white banner__title">
+          Возьмем на себя автоматизацию бюджетирования и казначейства в вашей
+          компании под ключ с дальнейшим сопровождением и консультационной
+          поддержкой
+        </h2>
+
+        <a href="#" class="btn btn-reset btn--wh banner__btn modal-btn"
+          >Связаться с нами</a
+        >
+      </div>
+
+      <div class="banner__img">
+        <img src="./img/banner/04.svg" alt="" />
+      </div>
+    </div>
+  </div>
+</section>
+
+        <div class="modal modal-main">
+  <div class="modal__body">
+    <div
+      class="modal__close"
+      data-swipe-threshold="20"
+      data-swipe-unit="px"
+      data-swipe-timeout="500"
+      data-swipe-ignore="false"
+    >
+      <svg
+        width="40"
+        height="40"
+        viewBox="0 0 40 40"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M34.9999 34.9999L20 20M20 20L5 5M20 20L35.0001 5M20 20L5 35.0001"
+          stroke="white"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </div>
+    <div class="modal__title title3">
+      Заявка на бесплатный аудит финансовой системы
+    </div>
+    <form action="#" class="modal__form modal-form form">
+      <label class="form__label">
+        <input
+          type="text"
+          class="form__input input-name"
+          placeholder="*Ваше имя"
+        />
+      </label>
+      <label class="form__label">
+        <input
+          type="tel"
+          class="form__input input-tel"
+          placeholder="*Телефон"
+        />
+      </label>
+      <label class="form__label">
+        <input
+          type="email"
+          class="form__input input-email"
+          placeholder="E-mail"
+        />
+      </label>
+
+      <label class="form__wrapper checkbox-wrapper desc">
+        <input type="checkbox" class="visually-hidden" />
+        <div class="form__row">
+          <div class="form__check"></div>
+          Я согласен (а) на обработку персональных данных
+        </div>
+      </label>
+
+      <button class="btn btn-reset form__btn">Оставить заявку</button>
+    </form>
+  </div>
+</div>
+ <div class="modal modal-thx">
+  <div class="modal__body">
+    <div class="modal__title title3">Благодарим за предоставленные данные!</div>
+    <div class="modal__desc">Наш специалист свяжется с вами в течение часа</div>
+
+    <div
+      class="modal__close"
+      data-swipe-threshold="20"
+      data-swipe-unit="px"
+      data-swipe-timeout="500"
+      data-swipe-ignore="false"
+    >
+      <svg
+        width="40"
+        height="40"
+        viewBox="0 0 40 40"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M34.9999 34.9999L20 20M20 20L5 5M20 20L35.0001 5M20 20L5 35.0001"
+          stroke="white"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__container">
+      <div class="footer__content">
+        <div class="footer__wrap">
+          <a href="./" class="footer__logo logo">ПрограмМ Лайн</a>
+          <p class="footer__sublogo">Решения на базе 1С для вашего бизнеса</p>
+        </div>
+      </div>
+      <address class="footer__address">
+        <div class="footer__link desc">
+          <a href="tel:+79636416422"> + 7 (963) 641-64-22</a>
+        </div>
+        <div class="footer__link desc">
+          <a href="mailto:support@program-line.ru">support@program-line.ru</a>
+        </div>
+      </address>
+      <a href="#" class="btn btn-reset footer__btn modal-btn"
+        >Запросить аудит сейчас</a
+      >
+    </div>
+
+    <div class="footer__bottom">
+      <small class="footer__copy desc">© 2024, Все права защищены</small>
+      <small class="footer__copy desc">Перминов Егор Юрьевич, директор</small>
+    </div>
+  </div>
+</footer>
+
+      
+    </div>
+  </body>
+</html>

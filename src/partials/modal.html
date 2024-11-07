@@ -1,0 +1,63 @@
+<div class="modal modal-main">
+  <div class="modal__body">
+    <div
+      class="modal__close"
+      data-swipe-threshold="20"
+      data-swipe-unit="px"
+      data-swipe-timeout="500"
+      data-swipe-ignore="false"
+    >
+      <svg
+        width="40"
+        height="40"
+        viewBox="0 0 40 40"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M34.9999 34.9999L20 20M20 20L5 5M20 20L35.0001 5M20 20L5 35.0001"
+          stroke="white"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </div>
+    <div class="modal__title title3">
+      Заявка на бесплатный аудит финансовой системы
+    </div>
+    <form action="#" class="modal__form modal-form form">
+      <label class="form__label">
+        <input
+          type="text"
+          class="form__input input-name"
+          placeholder="*Ваше имя"
+        />
+      </label>
+      <label class="form__label">
+        <input
+          type="tel"
+          class="form__input input-tel"
+          placeholder="*Телефон"
+        />
+      </label>
+      <label class="form__label">
+        <input
+          type="email"
+          class="form__input input-email"
+          placeholder="E-mail"
+        />
+      </label>
+
+      <label class="form__wrapper checkbox-wrapper desc">
+        <input type="checkbox" class="visually-hidden" />
+        <div class="form__row">
+          <div class="form__check"></div>
+          Я согласен (а) на обработку персональных данных
+        </div>
+      </label>
+
+      <button class="btn btn-reset form__btn">Оставить заявку</button>
+    </form>
+  </div>
+</div>

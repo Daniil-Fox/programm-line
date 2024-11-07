@@ -1,0 +1,18 @@
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+  }
+
+  &__link {
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: var(--black);
+    transition: color .3s ease-out;
+
+    @include hover {
+      color: var(--blue-main);
+    }
+  }
+}

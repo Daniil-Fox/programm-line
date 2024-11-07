@@ -1,0 +1,131 @@
+.auto {
+  padding-top: 6rem;
+  margin-bottom: 6rem;
+
+  @include small-tablet {
+    padding-top: 3rem;
+    margin-bottom: 3.2rem;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include small-tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+    }
+  }
+
+  &__img {
+    position: relative;
+
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+
+      @include small-tablet {
+        position: static;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 3.2rem;
+
+    @include small-tablet {
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 6.4rem;
+
+    @include small-tablet {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__desc {
+    &:not(:last-child) {
+      margin-bottom: 3.2rem;
+    }
+  }
+
+  &__text {
+    padding-right: 8rem;
+
+    @include small-tablet {
+      padding-right: 0;
+    }
+  }
+
+  &__content {
+    padding-bottom: 6.4rem;
+
+    @include small-tablet {
+      padding-bottom: 0;
+    }
+  }
+
+  &__items {
+    border-top: 1px solid var(--line-color);
+    border-bottom: 1px solid var(--line-color);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    @include small-tablet {
+      display: block;
+    }
+  }
+}
+
+.auto-item {
+  display: flex;
+  align-items: center;
+  gap: 1.9rem;
+  padding: 3rem 2.5rem;
+
+  @include small-tablet {
+    padding: 2.7rem 1.6rem;
+  }
+
+  &:first-child {
+    padding-left: 0;
+
+    @include small-tablet {
+      justify-content: center;
+    }
+  }
+
+  &__icon {
+    height: 1.8rem;
+    width: 1.8rem;
+    flex-shrink: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    color: var(--blue-main);
+
+    @include small-tablet {
+      font-size: 2.4rem;
+    }
+  }
+}

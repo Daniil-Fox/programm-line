@@ -1,0 +1,121 @@
+.success {
+  padding: 6rem 0;
+  margin-bottom: 6rem;
+
+  @include small-tablet {
+    padding-top: 3rem;
+    margin-bottom: 3.2rem;
+  }
+
+  &__title {
+    margin-bottom: 8.8rem;
+
+    @include small-tablet {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__capture {
+    margin-bottom: 3.2rem;
+
+    @include small-tablet {
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    @include small-tablet {
+      display: block;
+    }
+  }
+
+  &__left {
+    grid-column: 3 span;
+  }
+
+  &__img {
+    position: relative;
+
+    @include small-tablet {
+      display: none;
+      height: 19rem;
+    }
+
+    &--mob {
+      display: none;
+
+      @include small-tablet {
+        display: block;
+
+        margin-bottom: 3.2rem;
+      }
+    }
+
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+
+      @include small-tablet {
+        position: static;
+      }
+    }
+  }
+
+  &__items {
+    border: 1px solid #efefef;
+    border-right: none;
+    border-left: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-auto-rows: 1fr;
+
+    @include small-tablet {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, 1fr);
+
+
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 3.2rem;
+
+      @include small-tablet {
+        margin: 0;
+      }
+    }
+  }
+
+
+}
+
+.s-item {
+  padding: 2rem 2.6rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+
+  @include small-tablet {
+    padding: 1.6rem;
+    gap: 1.6rem;
+  }
+
+  &:nth-child(1),
+  &:nth-child(2),
+  &:nth-child(3) {
+    border-bottom: 1px solid #efefef;
+  }
+
+  &__icon {
+    flex-shrink: 0;
+    width: 1.9rem;
+    height: 1.9rem;
+  }
+}

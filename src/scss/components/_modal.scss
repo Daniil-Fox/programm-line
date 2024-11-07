@@ -1,0 +1,137 @@
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  opacity: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(#000, 0.3);
+  backdrop-filter: blur(4px);
+
+  transition: .3s ease-out;
+
+  @include small-tablet {
+    transform: translateY(100%);
+    z-index: 10;
+    opacity: 1;
+  }
+
+  &.active {
+    z-index: 110;
+    opacity: 1;
+
+    @include small-tablet {
+      transform: translateY(0);
+    }
+  }
+
+  &__body {
+    position: relative;
+    background-color: var(--white);
+    padding: 6rem 3.7rem;
+    width: 100%;
+    max-width: 82rem;
+    box-shadow: 0px 0px 12px rgba(#0071fe, 0.05);
+
+    @include small-tablet {
+      max-width: 100%;
+      height: 100%;
+      padding: 6rem var(--container-offset);
+    }
+  }
+
+  &__close {
+    cursor: pointer;
+    position: absolute;
+    right: -12rem;
+    top: -6rem;
+    width: 4rem;
+    height: 4rem;
+
+    @include small-tablet {
+      width: 11.7rem;
+      height: .5rem;
+      background-color: #eaeaea;
+      border-radius: .5rem;
+      right: 50%;
+      top: .8rem;
+      transform: translateX(50%);
+    }
+
+    svg {
+      @include small-tablet {
+        display: none;
+      }
+
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__title {
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 4rem;
+
+    @include small-tablet {
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  &__desc {
+    margin: 0;
+    font-weight: 300;
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--black);
+  }
+
+  &__form {
+    max-width: 52.5rem;
+    margin: 0 auto;
+    padding: 0;
+
+    @include small-tablet {
+      max-width: 100%;
+    }
+
+    .form__wrapper {
+      margin-bottom: 4rem;
+      font-size: 1.4rem;
+      flex-wrap: wrap;
+
+      @include small-tablet {
+        margin-bottom: 3.2rem;
+      }
+    }
+
+    .form__row {
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+    }
+
+    .form__input {
+      display: block;
+      width: 100%;
+      margin-bottom: 0;
+    }
+
+    .form__label {
+      display: block;
+
+      &:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    .form__btn {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.top {
+  padding: 6rem 0;
+  margin-bottom: 6rem;
+
+  @include small-tablet {
+    padding: 3rem 0;
+    margin-bottom: 3rem;
+  }
+
+  &__title {
+    margin-bottom: 6rem;
+
+    @include small-tablet {
+      margin-bottom: 3.2rem;
+    }
+
+    span {
+      color: var(--blue-main);
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    @include small-tablet {
+      grid-template-columns: repeat(2, 50%);
+    }
+  }
+
+  &__item {
+    padding: 3rem;
+    border: 1px solid var(--line-color);
+    border-right: none;
+    border-left: none;
+
+    @include small-tablet {
+      padding: 1.6rem 0.8rem;
+    }
+
+    span {
+      display: block;
+      margin-bottom: 2.8rem;
+
+      font-weight: 400;
+      font-size: 1.4rem;
+      color: var(--grey);
+
+      @include small-tablet {
+        margin-bottom: 1.6rem;
+      }
+    }
+  }
+
+  &__desc {
+    text-transform: uppercase;
+
+    @include small-tablet {
+      font-size: 1.4rem;
+    }
+  }
+}

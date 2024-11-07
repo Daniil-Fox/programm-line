@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  @include('partials/head.html')
+
+  <body class="page__body">
+    <div class="site-container">
+      <div class="site-container__line"></div>
+      <div class="site-container__line"></div>
+      <div class="site-container__line"></div>
+      <div class="site-container__line"></div>
+      <div class="site-container__line"></div>
+      @include('partials/header.html')
+      <main class="main">
+        @include('partials/hero.html') @include('partials/sign.html')
+        @include('partials/auto.html') @include('partials/mean.html')
+        @include('partials/banner.html') @include('partials/success.html')
+        @include('partials/banner-disc.html') @include('partials/work.html')
+        @include('partials/system.html') @include('partials/banner-know.html')
+        @include('partials/top.html') @include('partials/banner-take.html')
+        @include('partials/modal.html') @include('partials/modal-thx.html')
+      </main>
+      @include('partials/footer.html')
+      <!-- @include('html/h1.html') пример include -->
+    </div>
+  </body>
+</html>
