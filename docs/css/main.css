@@ -591,7 +591,6 @@ body.menu-active .site-container::before {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  z-index: 12;
 }
 .hero .site-container__line {
   background-color: rgba(255, 255, 255, 0.7);
@@ -1161,7 +1160,6 @@ body.menu-active .site-container::before {
   background-color: var(--dark-blue);
   margin-bottom: 6rem;
   position: relative;
-  z-index: 12;
 }
 @media (max-width: 768px) {
   .banner {
