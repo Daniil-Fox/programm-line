@@ -40,6 +40,10 @@ a {
   text-decoration: none;
 }
 
+.site-wrapper {
+  position: relative;
+}
+
 .site-container {
   overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
 
@@ -48,11 +52,11 @@ a {
 
   &__line {
     position: absolute;
-    z-index: 101;
+    z-index: -1;
+
     width: 1px;
-    // background-image: linear-gradient(to right, #e9cfcf 10%, var(--line-color) 90%);
-    // border: 1px solid var(--grey);
-    background-image: linear-gradient(to right, #e9cfcf 10%, transparent 90%);
+    background: var(--line-color);
+
     height: 100%;
 
     &:nth-child(1) {
@@ -76,6 +80,10 @@ a {
     &:nth-child(3) {
       left: calc(((100% - var(--container-width)) / 2 + var(--container-offset) - 1px) + 62rem);
       top: 0;
+
+      @include small-tablet {
+        display: none;
+      }
     }
 
     &:nth-child(4) {

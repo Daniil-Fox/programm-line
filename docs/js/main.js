@@ -15111,6 +15111,7 @@ if (menu) {
   const menuItems = menu.querySelectorAll('.nav__link');
   menuBtn.addEventListener('click', e => {
     menu.classList.toggle('active');
+    menuBtn.classList.toggle('active');
     document.body.classList.toggle('menu-active');
   });
   menuItems.forEach(link => {
@@ -15127,6 +15128,7 @@ if (menu) {
   });
   document.querySelector('.site-container').addEventListener('click', e => {
     menu.classList.remove('active');
+    menuBtn.classList.remove('active');
     document.body.classList.remove('menu-active');
   });
 }

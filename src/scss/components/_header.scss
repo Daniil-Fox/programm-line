@@ -66,11 +66,11 @@
       }
 
       &::before {
-        transform: rotate(45deg) translate(5.5px);
+        transform: rotate(-45deg) translate(-5.5px);
       }
 
       &::after {
-        transform: rotate(-45deg) translate(5.5px);
+        transform: rotate(45deg) translate(-5.5px);
       }
     }
   }

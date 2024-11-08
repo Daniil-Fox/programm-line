@@ -6,6 +6,12 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
+  z-index: 12;
+
+  .site-container__line {
+    background-color: rgba(#fff, 0.7);
+  }
 
   @include small-tablet {
     margin-bottom: 3.2rem;

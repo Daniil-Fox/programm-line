@@ -24,9 +24,6 @@ if(allModals.length > 0){
     const modalBody = m.querySelector('.modal__body')
     const modalClose = m.querySelector('.modal__close')
 
-
-
-
     modalBody.addEventListener('click', e => {
       e.stopPropagation()
     })
