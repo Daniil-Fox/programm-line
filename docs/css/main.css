@@ -591,9 +591,11 @@ body.menu-active .site-container::before {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  z-index: 1;
 }
 .hero .site-container__line {
   background-color: rgba(255, 255, 255, 0.7);
+  z-index: 1;
 }
 @media (max-width: 768px) {
   .hero {
@@ -603,6 +605,8 @@ body.menu-active .site-container::before {
   }
 }
 .hero__title {
+  position: relative;
+  z-index: 2;
   margin: 0;
   margin-bottom: 1.6rem;
   font-family: var(--second-family);
@@ -618,6 +622,8 @@ body.menu-active .site-container::before {
 }
 .hero__content {
   max-width: 61.2rem;
+  position: relative;
+  z-index: 2;
 }
 @media (max-width: 768px) {
   .hero__content {
