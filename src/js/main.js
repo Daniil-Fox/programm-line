@@ -1,5 +1,5 @@
 import './_components.js';
-
+import { Fancybox } from "@fancyapps/ui";
 
 const sign = document.querySelector('.sign')
 
@@ -14,3 +14,6 @@ if(sign){
 }
 
 
+Fancybox.bind("[data-fancybox=gallery]", {
+  // Your custom options
+});

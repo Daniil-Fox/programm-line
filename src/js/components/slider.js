@@ -56,3 +56,14 @@ window.addEventListener('DOMContentLoaded', () => {
   );
 
 });
+
+
+new Swiper('.trust__slider', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  navigation: {
+    prevEl: '.trust-prev',
+    nextEl: '.trust-next',
+  }
+})
